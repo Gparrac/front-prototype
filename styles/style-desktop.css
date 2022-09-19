@@ -57,7 +57,7 @@ footer .subtitle{
     top: 250px;
     left: 80px;
     margin: 0 auto;
-    background-image: url("/images2/image\ 4.png");
+    background-image: url("images2/image\ 4.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -70,7 +70,7 @@ footer .subtitle{
     bottom: 160px;
     right: 0px;
     margin: 0 auto;
-    background-image: url("/images2/Intersect.png");
+    background-image: url("images2/Intersect.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
