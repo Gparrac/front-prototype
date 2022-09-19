@@ -57,7 +57,7 @@ footer .subtitle{
     top: 250px;
     left: 80px;
     margin: 0 auto;
-    background-image: url("images/image\ 4.png");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/front-prototype.appspot.com/o/image%204.png?alt=media&token=960ae3a3-73b0-4362-92b5-5b63d5055ef8");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -70,7 +70,7 @@ footer .subtitle{
     bottom: 160px;
     right: 0px;
     margin: 0 auto;
-    background-image: url("images/Intersect.png");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/front-prototype.appspot.com/o/Intersect.png?alt=media&token=df56bf90-c1fb-4512-9216-32c4d8d1bd04");
     background-repeat: no-repeat;
     background-size: cover;
   }
