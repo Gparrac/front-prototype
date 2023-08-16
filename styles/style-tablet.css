@@ -21,9 +21,9 @@
     
 }
 .info__image {
-    width: 300px;
-    height: 220px;
-    top: -135px;
+    width: 220px;
+    height: 160px;
+    top: -100px;
 }
 .proceso{    
     padding-top: 150px;
@@ -43,7 +43,7 @@
     font-size: 1.9rem;
 }
 .slide__item{
-    height: 350px;
+    height: 370px;
     width: 40%;
     min-width: 350px;
     max-width: 400px;

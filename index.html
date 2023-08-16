@@ -1,267 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/main-icon.png" type="image/x-icon">
+    <link rel="icon" href="./images/main-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style-mobile.css" media="" />
+    <link
+      rel="stylesheet"
+      href="./styles/style-tablet.css"
+      media="(min-width: 800px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/style-desktop.css"
+      media="(min-width: 1200px)"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style-mobile.css" media="">
-    <link rel="stylesheet" href="./styles/style-tablet.css" media="(min-width: 800px)">
-    <link rel="stylesheet" href="./styles/style-desktop.css" media="(min-width: 1200px)">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Strateo</title>
+  </head>
 
-    <title>Economía, vida humana y bien común</title>
-</head>
-
-<body>
+  <body style="overflow-x: hidden">
     <nav>
-        <ul id="nav" class="main-nav">
-            <li><a href="#razon">¿POR QUE UNA ECONOMIA PARA LAVIDA?</a></li>
-            <li><a href="#proceso">SUJETO NECESITADO</a></li>
-            <li><a href="#servicios">RACIONALIDAD REPRODUCTIVA</a></li>
-        </ul>
+      <ul id="nav" class="main-nav">
+        <li><a href="#razon">¿Quienes somos?</a></li>
+        <li><a href="#proceso">Servicios</a></li>
+        <li><a href="#servicios">Auditorias</a></li>
+      </ul>
     </nav>
-    <main>
+    <main style="width: 100%">
+      <section class="hero">
+        <div class="hero__title">
+          <div id="title-hero" class="title__main-group">
+        </div>
+    </div>
+</section>
+<section id="conocenos" class="info">
+          <img src="./images/main-icon.png" alt="logo" class="footer__img">
+        <div class="info__div--first">
+          <h2 class="subtitle">¿Quienes somos?</h2>
+          <p>
+            <span class="info__bold">STRATEO SAS</span> es una empresa enfocada
+            en desarrollar modelos de gestión estratégicos y operacionales en
+            los procesos de negocio de las organizaciones con el objetivo de
+            lograr eficiencias visibles en sus resultados aplicando la
+            ingeniería de procesos.
+          </p>
+          <p>
+            <span class="info__bold">Misión</span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            temporibus eligendi? Eius dolore blanditiis ab neque atque esse
+            consequatur laborum, nihil saepe ullam quia voluptatem itaque, dolor
+            quasi rerum delectus.
+          </p>
+          <p>
+            <span class="info__bold">Visión</span>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa,
+            est. Quos porro maiores eaque qui aliquam tempore ex non ipsa! In
+            maxime blanditiis nemo sunt molestiae necessitatibus, ab facere
+            dolore?
+          </p>
+        </div>
+      </section>
+      <section class="proceso">
+        <span id="proceso" class="info__image"></span>
+        <span class="info__image--desktop"></span>
+        <span class="info__image2--desktop"></span>
+        <h2 class="subtitle">Portafolio</h2>
+        <section class="aux-row--end">
+          <div class="proceso__row">
+            <article
+              id="prod-1"
+              class="proceso__item proceso__item--azul fadeRight"
+            >
+              <p>Plan estratégico de seguridad vial PESV ISO 39001.</p>
+              <div>
+                <span>1</span>
+              </div>
+            </article>
+            <article
+              id="prod-2"
+              class="proceso__item proceso__item--orange fadeLeft"
+            >
+              <div>
+                <span>2</span>
+              </div>
+              <p>
+                Sistema de gestión seguridad y salud en el trabajo SG-SST ISO
+                45001.
+              </p>
+            </article>
+            <article
+              id="prod-3"
+              class="proceso__item proceso__item--azul fadeRight"
+            >
+              <p>
+                Sistemas de gestión en seguridad en cadena de abastecimiento ISO
+                28000.
+              </p>
+              <div>
+                <span>3</span>
+              </div>
+            </article>
+            <article
+              id="prod-4"
+              class="proceso__item proceso__item--orange fadeLeft"
+            >
+              <div>
+                <span>4</span>
+              </div>
+              <p>
+                Buenas Prácticas Manufactureras (BPN)
+              </p>
+            </article>
+          </div>
+        </section>
 
-        <section class="hero">
-            <div class="hero__title">
-                <div id="title-hero" class="title__main-group">
-                    <h1>Economía, vida humana y bien común</h1>
-                    <h6>Hinkelammert, Franz y Mora, HenryHinkelammert, Franz y Mora, Henry</h6>
-                </div>
+        <section class="aux-row--start">
+          <div class="proceso__row">
+            <article
+              id="prod-5"
+              class="proceso__item proceso__item--azul fadeRight"
+            >
+              <p>
+                Gestión de Reportes ante VIGIA Superintendencia de Transporte.
+                Ministerio de trabajo
+              </p>
+              <div>
+                <span>5</span>
+              </div>
+            </article>
+            <article
+              id="prod-6"
+              class="proceso__item proceso__item--orange fadeLeft"
+            >
+              <div>
+                <span>6</span>
+              </div>
+              <p>
+                Gestión de Reportes ante VIGIA Superintendencia de Transporte.
+                Ministerio de trabajo
+              </p>
+            </article>
+            <article
+              id="prod-7"
+              class="proceso__item proceso__item--azul fadeRight"
+            >
+              <p>Sistemas de gestión BASC Y OEA</p>
+              <div>
+                <span>7</span>
+              </div>
+            </article>
+            <article
+              id="prod-8"
+              class="proceso__item proceso__item--orange fadeLeft"
+            >
+              <div>
+                <span>8</span>
+              </div>
+              <p>Gestión de la calidad en softwareIso 29110</p>
+            </article>
+            <article
+              id="prod-9"
+              class="proceso__item proceso__item--azul fadeRight"
+            >
+              <p>
+                Planes de contingencia para derrames de hidrocarburos y reportes
+                ante autoridad ambiental.
+              </p>
+              <div>
+                <span>9</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+      <span id="servicios" class="proceso__svg"></span>
+      <section class="servicios">
+        <h2 class="subtitle">
+        ¿Que hacemos?
+        </h2>
+        <div class="servicios__row">
+          <article id="serv-front" class="servicios__item fadeTop">
+            <span class="serv-item__svg serv-item__svg--frontend"></span>
+            <h3>Gestión Integrada</h3>
+            <p>
+              Modelación de procesos de proyectos y negocios
+            </p>
+          </article>
+          <article id="serv-back" class="servicios__item fadeTop">
+            <span class="serv-item__svg serv-item__svg--backend"></span>
+            <h3>Otimización Empresarial</h3>
+            <p>
+              Auditorias y consultorias con enfoque en procesos
+            </p>
+          </article>
+          <article id="serv-ui" class="servicios__item fadeTop">
+            <span class="serv-item__svg serv-item__svg--ui"></span>
+            <h3>Marco legal</h3>
+            <p> 
+                Cumplimiento de procesos misionales y de soporte             
+            </p>
+          </article>
+          <article id="serv-host" class="servicios__item fadeTop">
+            <span class="serv-item__svg serv-item__svg--alojamiento"></span>
+            <h3>Sostenibilidad colectiva</h3>
+            <p>
+              Cumplimiento legal ante autoridad ambiental, diseño de planes de emergencia y contingencia.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="proyectos">
+        <h2 id="proyectos" class="subtitle">
+          NUESTRO CLIENTES
+        </h2>
+        <div class="slide">
+          <article class="slide__item slide__item--orange">
+            <div>
+              <img
+                class="item__logo"
+                src="./images/summa.png"
+                alt="logo-empresa"
+              />
             </div>
-        </section>
-        <section id="conocenos" class="info">
-            <div >
-                <h2  class="subtitle">Introducción</h2>
-                <p>Desde la racionalidad reproductiva (producción y reproducción de la vida real), como desde la racionalidad instrumental medio-fin (el “éxito económico”, la acumulación, el consumismo).</p>
-                <p>El criterio de racionalidad que opera en la reproducción de este circuito es un criterio de vida/muerte (racionalidad reproductiva) y no un simple criterio de medio-fin (racionalidad instrumental).</p>
+            <h3>SUMMA S.A.S</h3>
+            <p>
+                Líderes en transporte confiable y ágil, brindando soluciones logísticas integrales con enfoque en resultados.
+            </p>
+          </article>
+          <article class="slide__item slide__item--blue">
+            <div>
+              <img
+                class="item__logo"
+                src="./images/autos.jpg"
+                alt="logo-empresa"
+              />
             </div>
-        </section>
-        <section class="proceso">
-            <span id="proceso" class="info__image"></span>
-            <span class="info__image--desktop"></span>
-            <span class="info__image2--desktop"></span>
-            <h2  class="subtitle">El ser humano como sujeto necesita...</h2>
-            <section class="aux-row--end">
-                <div class="proceso__row">
-                    <article id="prod-1" class="proceso__item proceso__item--azul fadeRight">
-                        <p>
-                            En cuanto sujeto corporal, natural, viviente se enfrenta en primer término a un ámbito de necesidades.
-                        </p>
-                        <div>
-                            <span>1</span>
-                        </div>
-                    </article>
-                    <article id="prod-2" class="proceso__item proceso__item--orange fadeLeft">
-                        <div>
-                            <span>2</span>
-                        </div>
-                        <p>
-                            Siendo el hombre un ser natural, esto es, parte integrante de la naturaleza, no puede colocarse por encima de las leyes naturales.
-                        </p>
-                </article>
-                    <article id="prod-3" class="proceso__item proceso__item--azul fadeRight">
-                        <p>
-                            Necesidades antropológicas (materiales, afectivas y espirituales), sin cuya satisfacción la vida humana sencillamente no sería posible.
-                        </p>
-                        <div>
-                            <span>3</span>
-                        </div>
-                    </article>
-                    <article id="prod-4" class="proceso__item proceso__item--orange fadeLeft">
-                        <div>
-                            <span>4</span>
-                        </div>
-                        <p>
-                            Se aplica un criterio de satisfacción de las necesidades a la elección de los fines.
-                        </p>
-                    </article>
-                </div>
-            </section>
-
-            <section class="aux-row--start">
-                <div class="proceso__row">
-                    <article id="prod-5" class="proceso__item proceso__item--azul fadeRight">
-                        <p>
-                            Cuando estas necesidades son sustituidas por simples “preferencias”, el problema de la reproducción de la vida es desplazado, si no eliminado, de la reflexión económica.                    
-                        </p>
-                        <div>
-                            <span>5</span>
-                        </div>
-                    </article>
-                    <article id="prod-6" class="proceso__item proceso__item--orange fadeLeft">
-                        <div>
-                            <span>6</span>
-                        </div>
-                        <p>
-                            La satisfacción de las necesidades hace posible la vida, la satisfacción de las preferencias puede hacerla más o menos agradable.                     
-                        </p>
-                </article>
-                    <article id="prod-7" class="proceso__item proceso__item--azul fadeRight">
-                        <p>
-                            El ser humano al no tener una naturaleza especifica se ve a la dereiva y no se identifica si su naturaleza es humanizada por el trabajo humano.                    
-                        </p>
-                        <div>
-                            <span>7</span>
-                        </div>
-                    </article>
-                    <article id="prod-8" class="proceso__item proceso__item--orange fadeLeft">
-                        <div>
-                            <span>8</span>
-                        </div>
-                        <p>
-                            La teoría de la acción racional  se reduce a una teoría de la relación medio-fin, en la cual subyace un criterio de racionalidad instrumental.                    </p>
-                    </article>
-                    <!-- <article id="prod-9" class="proceso__item proceso__item--azul fadeRight">
-                        <div>
-                            <span>9</span>
-                        </div>
-                        <p>
-                            Racionalidad medio-fin como crisis de sostenibilidad, que hoy amenaza inclusive su sobrevivencia y la de la propia naturaleza.
-                            </p>
-                        </article>                 -->
-                        <article id="prod-9" class="proceso__item proceso__item--azul fadeRight">
-                            <p>
-                            Racionalidad medio-fin como crisis de sostenibilidad, que hoy amenaza inclusive su sobrevivencia y la de la propia naturaleza.
-                                
-                            </p>
-                            <div>
-                                <span>9</span>
-                            </div>
-                        </article>   
-                </div>
-            </section>
-
-        </section>
-        <span id="servicios"  class="proceso__svg"></span>
-        <section class="servicios">
-            <h2  class="subtitle">Economía de la vida y racionalidad reproductiva</h2>
-            <div class="servicios__row">
-                <article id="serv-front" class="servicios__item fadeTop">
-                    <span class=" serv-item__svg serv-item__svg--frontend"></span>
-                    <h3>Crisis al mercado totalizado</h3>
-                    <p>
-                        Las relaciones mercantiles  conducen a a desarrollar una teoría crítica de la racionalidad reproductiva.
-                    </p>
-                </article>
-                <article id="serv-back" class="servicios__item fadeTop">
-                    <span class="serv-item__svg serv-item__svg--backend"></span>
-                    <h3>Inicios de la teria</h3>
-                    <p>
-                        Karl Marx inició esta teoría de la racionalidad reproductiva y  elaboró el marco conceptual
-                    </p>
-                </article>
-                <article id="serv-ui" class="servicios__item fadeTop">
-                    <span class="serv-item__svg serv-item__svg--ui"></span>
-                    <h3>
-                        DEpendencia de la humanidad
-                    </h3>
-                    <p>
-                        La  irracionalidad de lo racionalizado es racionalidad de la vida de todos como respuesta a la naturaleza.
-                    </p>
-                </article>
-                <article id="serv-host" class="servicios__item fadeTop">
-                    <span class="serv-item__svg serv-item__svg--alojamiento"></span>
-                    <h3>
-                        la racionalidad reproductiva
-                    </h3>
-                    <p>
-                        La reproducción de la vida humana como criterio de racionalidad y de verdad de toda acción y discurso humano.
-                    </p>
-                </article>
+            <h3>Cargas y transportes</h3>
+            <p>
+                Tu socio en transporte veloz y seguro, priorizando entregas puntuales y soluciones logísticas efectivas.
+            </p>
+          </article>
+          <article class="slide__item slide__item--orange">
+            <div>
+              <img
+                class="item__logo"
+                src="./images/joyFactory.png"
+                alt="logo-empresa"
+              />
             </div>
-        </section>
-        <section class="proyectos">
-            <h2 id="proyectos" class="subtitle">MERCADO, PLANIFICACIÓN Y CIRCUITO NATURAL DE LAVIDA HUMANA</h2>
-            <div class="slide">
-                <article class="slide__item slide__item--orange">
-                    <div>
-                        <img class="item__logo" src="https://firebasestorage.googleapis.com/v0/b/front-prototype.appspot.com/o/proyect-1.png?alt=media&token=e95f9842-0e5b-4b13-afa9-72cb589d1da9" alt="logo-empresa">
-                    </div>
-                    <h3>
-                        CRÍTICA AL CAPITALISMO</h3>
-                    <p>El consiguiente respeto por el circuito natural de la vida humana, se encuentran más allá de las relaciones mercantiles.</p>
-                </article>
-                <article class="slide__item slide__item--blue">
-                    <div>
-                        <img class="item__logo" src="https://firebasestorage.googleapis.com/v0/b/front-prototype.appspot.com/o/proyect-3.png?alt=media&token=63fdb412-ab6f-4f38-afa2-9c496f9facc0" alt="logo-empresa">
-                    </div>
-                    <h3>EMPIREA PARA RENOVACIÓN</h3>
-                    <p>La humanización está detrás de la empírea como realidad por reivindicar.</p>
-                </article>
-                <article class="slide__item slide__item--orange">
-                    <div>
-                        <img class="item__logo" src="https://firebasestorage.googleapis.com/v0/b/front-prototype.appspot.com/o/proyect-2.png?alt=media&token=87adf0d7-8303-4b16-b37e-3027af502fd3" alt="logo-empresa">
-                    </div>
-                    <h3>RESPUESTA A LO rACIONALIZADO</h3>
-                    <p>La acción racional, es decir, una respuesta a la irracionalidad de lo racionalizado.</p>
-                </article>
+            <h3>Joy Factory</h3>
+            <p>
+                Expertos en transporte y logística, optimizando operaciones para un flujo constante y confiable de mercancías.
+            </p>
+          </article>
+          <article class="slide__item slide__item--blue">
+            <div>
+              <img
+                class="item__logo"
+                src="./images/transautosConvoy.png"
+                alt="logo-empresa"
+              />
             </div>
-        </section>
+            <h3>Tras-autos comboy</h3>
+            <p>
+                Tu socio en transporte veloz y seguro, priorizando entregas puntuales y soluciones logísticas efectivas.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
     <footer>
-        <section class="footer__conclution">
-            <span></span>
-            <h3 id="razon">¿Por qué una economía para la vida?</h3>
+        <span class="icon-separator"></span>
+        <section class="footer__conclution">                            
+            <h3 id="razon">Contactanos</h3>
             <p>
-                Es criterio de discernimiento y criterio de racionalidad, tanto desde la racionalidad reproductiva (producción y reproducción de la vida real), como desde la racionalidad instrumental medio-fin (el “éxito económico”, la acumulación, el consumismo).    
+              Siguenos en nuestras redes sociales y pregunta por nuestros planes.
             </p>
-            <p>
-            La economía neoclásica es una economía del cálculo, unilateralmente centrada en la racionalidad instrumental medio-fin y el valor de cambio (crematística). Ahora bien, toda calculabilidad es fragmentaria, por lo que tiende a ignorar e invisibilizar los efectos (intencionales o no intencionales) de lo no calculado y de lo no calculable.
-        </p>
-        </section>
-        <!-- <section class="footer__icons">
-            <a href="https://gitlab.com/Gparrac" class="icon--gitlab"></a>
-            <a href="https://wa.me/3159289909" class="icon--wpp"></a>
-            <a href="mailto:gregorio.p@hotmail.com?Subject=Aquí%20el%20asunto%20del%20mail" class="icon--mail"></a>
-        </section> -->
-        <h6 class="subtitle">Designed by <span>Estefania Gutierrez</span></h6>
+            <div class="footer__icons">  
+                    <a href="https://gitlab.com/Gparrac">
+                        <span class="icon icon--gitlab"></span>
+                        <span class="icon--text">Gparrac</span>
+                    </a>
+                    <a href="mailto:gregorio.p@hotmail.com?Subject=Aquí%20el%20asunto%20del%20mail">
+                        <span class="icon icon--email"></span>
+                        <span class="icon--text">proyectos@strateo.co</span>
+                    </a>
+                    <a href="https://wa.me/3159289909">
+                        <span class="icon icon--wpp"></span>
+                        <span class="icon--text">3028535470</span>
+                    </a>
+
+                </div>
+          </section>
+          <section class="footer__logo">
+            <img src="./images/main-icon.png" alt="logo" class="footer__img">
+
+          </section>
+      <h6 class="subtitle">Designed by <span>STRATEO</span></h6>
     </footer>
-</body>
-<script>
+  </body>
+  <script>
     function addAnimation(name) {
-        window.addEventListener('scroll', function () {
-            let servFront = document.getElementById(name);
-            let screenSize = window.innerHeight;            
-            if (servFront.getBoundingClientRect().top < screenSize) {
-                servFront.classList.add('visible');
-            } else {
-                servFront.classList.remove('visible');
-            }
-        });
+      window.addEventListener("scroll", function () {
+        let servFront = document.getElementById(name);
+        let screenSize = window.innerHeight;
+        if (servFront.getBoundingClientRect().top < screenSize) {
+          servFront.classList.add("visible");
+        } else {
+          servFront.classList.remove("visible");
+        }
+      });
     }
-    function changeNav(name){
-        window.addEventListener('scroll', function () {
-            let servFront = document.getElementById(name);
-            let mainNav = document.getElementById('nav');
-            let screenSize = window.innerHeight; 
-            console.log(servFront.getBoundingClientRect());           
-            if (servFront.getBoundingClientRect().top < screenSize/6) {
-                mainNav.classList.add('nav--dark');
-            } else {
-                mainNav.classList.remove('nav--dark');
-            }
-        });
+    function changeNav(name) {
+      window.addEventListener("scroll", function () {
+        let servFront = document.getElementById(name);
+        let mainNav = document.getElementById("nav");
+        let screenSize = window.innerHeight;
+        console.log(servFront.getBoundingClientRect());
+        if (servFront.getBoundingClientRect().top < screenSize / 6) {
+          mainNav.classList.add("nav--dark");
+        } else {
+          mainNav.classList.remove("nav--dark");
+        }
+      });
     }
-    changeNav('title-hero', 'nav--dark');
-    addAnimation('prod-1');
-    addAnimation('prod-2');
-    addAnimation('prod-3');
-    addAnimation('prod-4');
-    addAnimation('prod-5');
-    addAnimation('prod-6');
-    addAnimation('prod-7');
-    addAnimation('prod-8');  
-    addAnimation('prod-9');    
-    addAnimation('serv-front');
-    addAnimation('serv-back');
-    addAnimation('serv-ui');
-    addAnimation('serv-host');
-
-</script>
-
+    changeNav("title-hero", "nav--dark");
+    addAnimation("prod-1");
+    addAnimation("prod-2");
+    addAnimation("prod-3");
+    addAnimation("prod-4");
+    addAnimation("prod-5");
+    addAnimation("prod-6");
+    addAnimation("prod-7");
+    addAnimation("prod-8");
+    addAnimation("prod-9");
+    addAnimation("serv-front");
+    addAnimation("serv-back");
+    addAnimation("serv-ui");
+    addAnimation("serv-host");
+  </script>
 </html>

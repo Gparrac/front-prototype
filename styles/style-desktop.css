@@ -3,19 +3,23 @@
     height: 500px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
-.info div{
-    width: 40%;
+.info__div--first{
+    width: 60%;
     padding-left: 80px;
     
 }
 .info__image{
     left:auto;
-    right: 140px;
-    top: -440px;
-    width: 400px;
-    height: 300px;
+    right: 150px;
+    top: -500px;
+    width: 380px;
+    height: 280px;
+    
 }
+
+
 .info h2{
     text-align: left;       
 }
@@ -31,6 +35,12 @@
     justify-content: space-evenly;
     overflow-x: auto;
 }
+.slide__item {
+  min-width: 250px;
+  max-width: 280px;
+  height: 400px;
+}
+
 
 footer .subtitle{
     font-size: 2rem;
@@ -50,14 +60,13 @@ footer .subtitle{
 }
 .info__image--desktop {
     display: block;
-    width: 500px;
-    height: 400px;
-    
+    width: 814px;
+    height: 800PX;    
     position: absolute;
-    top: 250px;
-    left: 80px;
+    top:-20px;
+    left: 10px;
     margin: 0 auto;
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/front-prototype.appspot.com/o/image%204.png?alt=media&token=960ae3a3-73b0-4362-92b5-5b63d5055ef8");
+    background-image: url("../images/trucks.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -67,7 +76,7 @@ footer .subtitle{
     height: 1000px;
     
     position: absolute;
-    bottom: 160px;
+    bottom: 35px;
     right: 0px;
     margin: 0 auto;
     background-image: url("https://firebasestorage.googleapis.com/v0/b/front-prototype.appspot.com/o/Intersect.png?alt=media&token=df56bf90-c1fb-4512-9216-32c4d8d1bd04");
@@ -84,10 +93,14 @@ footer .subtitle{
     margin-left: 20px;
   }
   .footer__conclution {
+    width: 50%;
     border-radius: 300 300 0 0;
+    text-align: left;
   }  
   .footer__conclution h3{
     font-size: 3.2rem;
+    padding-top: 2px;
+    margin-left: 10%;
   }
   .footer__conclution p{
     font-size:1.9rem ;
@@ -95,4 +108,39 @@ footer .subtitle{
   .footer__conclution span{
     width: 120px;
     height: 100px;
+  }
+  .footer__icons a{
+    display: flex;
+    width: 100%;    
+    text-decoration: none;
+    margin-bottom: 12px;
+  }
+
+  .footer__icons{
+    flex-direction: column;
+    align-items: start;    
+    justify-content: center;
+    margin-left: 10%;
+    
+  }
+  .footer__logo{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 40%;
+  }
+  .footer__icons .icon--text{
+    display: inline-block ; 
+    padding-top: 1px;
+    padding-left: 10px;
+    font-size: 2rem;
+    color: var(--onlyWhite);
+    width: auto;
+    height: auto;
+  }
+  .footer__logo img{
+    display: block;
+    width: 70%;
+    max-width: 350px;
+    
   }

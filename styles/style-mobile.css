@@ -7,10 +7,10 @@ html {
   font-size: 65.2%;
 }
 :root {
-  --darkBlue: #0e2c2f;
-  --lightBlue: #096ea6;
-  --lightYellow: #FFFB89;
-  --orange: #ff8b08;
+  --darkBlue: #B4CE0B;
+  --lightBlue: #004F9D;
+  --lightYellow: white;
+  --orange: #849436;
   --yellow: #ceb731;
   --black: #000000;
   --gray: #1e1e1e;
@@ -29,6 +29,7 @@ html {
   align-items: center;
   z-index: 1;
   transition: all 1s;
+  
 }
 .main-nav li {
   padding: 10px;
@@ -36,12 +37,12 @@ html {
 .main-nav a {
   text-decoration: none;
   font-size: 1.6rem;
-  color: var(--orange);
+  color: white;
   text-transform: uppercase;
   font-family: "Bebas Neue", cursive;
 }
 .main-nav a:hover{
-  color: var(--onlyWhite);
+  color: var(--darkBlue);
 }
 .hero {
   width: 100%;
@@ -49,22 +50,37 @@ html {
   background-image: url("https://firebasestorage.googleapis.com/v0/b/front-prototype.appspot.com/o/hero-1.jpg?alt=media&token=38a2c315-a55a-4c6a-86a8-40d004975639");
   background-size: cover;
 
+  position: relative;
   background-repeat: no-repeat;
   background-position: center center;
 }
-.hero__title {
+ .hero__title {
   width: 100%;
   height: 100%;
-  display: grid;
+  display: flex;
+  position: absolute;
   background: rgb(14, 44, 47);
   background: linear-gradient(
     180deg,
     rgba(14, 44, 47, 0.4386363636363636) 0%,
-    rgba(9, 110, 166, 1) 100%
+    rgb(0,79,157) 100%
   );
-  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: end;
+  
+} 
+.info img{
+  top: -300px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  position: absolute;
+  
+  
+
 }
-.title__main-group {
+/*.title__main-group {
   margin: 0 auto;
   grid-row: 3;
 }
@@ -81,7 +97,7 @@ html {
   font-size: 1.6rem;
   font-family: var(--fontBebas);
   color: var(--orange);
-}
+}*/
 .info {
   width: 100%;
   padding-top: 100px;
@@ -90,7 +106,15 @@ html {
   max-height: 500px;
   position: relative;
   background-color: var(--lightBlue);
+  padding-bottom:100px;
 }
+
+.info__subsection{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
 .subtitle {
   text-align: center;
   margin-bottom: 25px;
@@ -98,7 +122,7 @@ html {
   font-family: var(--fontBebas);
 }
 .info h2 {
-  color: var(--onlyWhite);
+  color: var(--darkBlue);
   
 }
 .info p {
@@ -112,16 +136,20 @@ html {
   font-family: var(--fontRoboto);
   color: var(--onlyWhite);
 }
+.info p span{
+  font-weight: 700;
+  text-transform: uppercase;
+}
 .info__image {
   display: block;
-  width: 170px;
-  height: 120px;
+  width: 120px;
+  height: 90px;
   position: absolute;
-  top: -68px;
+  top: -55px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/front-prototype.appspot.com/o/separator-hero.svg?alt=media&token=24268492-a8b5-45d3-bf4d-2638f35ecc46");
+  background-image: url("../images/separator-footer.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -136,6 +164,7 @@ html {
   color: var(--lightBlue);
 }
 .proceso__row{
+  overflow-x: hidden;
   margin: 0 auto;
   width: 100%;
   max-width: 900px;
@@ -146,7 +175,7 @@ html {
   flex-direction: column;
 }
 .proceso__item {
-  width: 90%;
+  /* width: 90%; */
   margin: 50px auto;
   display: grid;
   align-items: center;
@@ -210,7 +239,7 @@ html {
   z-index: -1;
   
   
-  margin: 0 auto;
+  /* margin: 0 auto; */
   background-image: url("https://firebasestorage.googleapis.com/v0/b/front-prototype.appspot.com/o/process-separator.svg?alt=media&token=9d037897-f42b-4bab-877b-1c34f54b88ab");
   background-repeat: no-repeat;
   background-size: cover;
@@ -223,7 +252,7 @@ html {
   background-color: var(--gray);
 }
 .servicios h2 {
-  color: var(--orange);
+  color: var(--darkBlue);
 }
 .servicios__row{
     width: 100%;
@@ -268,10 +297,10 @@ html {
 
 .servicios__item h3{
     text-align: center;
-    
+    padding-top: 20px;
     font-size: 1.5rem;
     font-family: var(--fontBebas);
-    color: var(--orange);
+    color: var(--darkBlue);
 }
 .servicios__item p{
     text-align: center;
@@ -282,7 +311,7 @@ html {
 .proyectos{
     width: 100%;
     height: auto;
-    padding-bottom: 30px;    
+    padding-bottom: 40px;    
     padding-top: 50px;
     background-color: var(--onlyWhite);
 }
@@ -297,7 +326,7 @@ html {
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
-    padding:  0 30px;
+    padding:  60px 0;
 }
 
 .slide__item{
@@ -352,23 +381,27 @@ html {
 .slide__item p{
     text-align: center;
     font-size: 1rem;
+    padding: 0 39px;
     font-family: var(--fontRoboto);
     color: var(--onlyWhite);
 }
 footer{
   width: 100%;
-  
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
   min-height: 120px;
   background-color: var(--gray);
   border-radius: 150px 150px 0 0;
   
 }
 .footer__conclution{
+  width: 100%;
   position: relative;
   text-align: center;
   color: var(--onlyWhite);
   padding:30px 0 ;
-  margin-top: 120px;
+  margin-top: 10px;
 
 }
 .footer__conclution h3{
@@ -386,15 +419,15 @@ footer{
   
   
 }
-.footer__conclution span{
+ .icon-separator{
   display: block;    
   position: absolute;
   
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 90px;
 
 
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/front-prototype.appspot.com/o/separator-footer.svg?alt=media&token=38a151a6-7126-4746-9a08-03621bf08eda');
+  background-image: url('../images/separator-footer.png');
   background-repeat: no-repeat;
   background-size: cover;
   top: -40px;
@@ -404,7 +437,7 @@ footer{
 
 }
 .footer__icons{
-  width: 40%;
+  width: 100%;
   min-width: 250px;
   padding: 15px 0;
   margin: 0 auto;
@@ -413,29 +446,46 @@ footer{
 
 }
 .footer__icons a{
+  display: flex;
+  
+}
+.footer__logo img {
+  display: none;
+}
+
+.footer__icons .icon{
   display: block;
   width: 25px;
   height: 25px;
-  text-decoration: none;
+  
   
 }
+.footer__icons .icon--text{
+  display: none;
+  
+}
+
 footer .subtitle{
   font-size: 1.8rem;
   color: var(--onlyWhite);
   margin: 0;
+  width: 100%;
+  padding-bottom: 20px;
 }
 .icon--gitlab{
-  background-image: url('images/gitlab-icon.svg');
+
+  
+  background-image: url('../images/gitlab-icon.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .icon--wpp{
-  background-image: url('images/wpp-icon.svg');
+  background-image: url('../images/wpp-icon.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
-.icon--mail{
-  background-image: url('images/mail-icon.svg');
+.icon--email{
+  background-image: url('../images/mail-icon.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -466,5 +516,5 @@ footer .subtitle{
   transition: all 1s;
 }
 footer .subtitle span{
-  color: var(--orange);
+  color: var(--darkBlue);
 }
