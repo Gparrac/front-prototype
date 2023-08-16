@@ -47,13 +47,26 @@ html {
 .hero {
   width: 100%;
   height: 540px;
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/front-prototype.appspot.com/o/hero-1.jpg?alt=media&token=38a2c315-a55a-4c6a-86a8-40d004975639");
+  /* background-image: url("https://firebasestorage.googleapis.com/v0/b/front-prototype.appspot.com/o/hero-1.jpg?alt=media&token=38a2c315-a55a-4c6a-86a8-40d004975639"); */
   background-size: cover;
 
   position: relative;
   background-repeat: no-repeat;
   background-position: center center;
 }
+#video_background {
+  object-fit: fill;
+  object-position: center;
+
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
  .hero__title {
   width: 100%;
   height: 100%;
@@ -62,7 +75,7 @@ html {
   background: rgb(14, 44, 47);
   background: linear-gradient(
     180deg,
-    rgba(14, 44, 47, 0.4386363636363636) 0%,
+    rgba(14, 44, 47, 0.4386363636363636) 60%,
     rgb(0,79,157) 100%
   );
   justify-content: center;
