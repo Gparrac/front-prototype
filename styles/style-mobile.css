@@ -296,7 +296,7 @@ html {
     background-position: center center;
 }
 .serv-item__svg--frontend{
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/front-prototype.appspot.com/o/serv-1.svg?alt=media&token=4fd9ba01-423f-400d-a4e5-cdc92686ec24');
+    background-image: url('../images/serv-1.svg');
 }
 .serv-item__svg--backend{
     background-image: url('https://firebasestorage.googleapis.com/v0/b/front-prototype.appspot.com/o/serv-2.svg?alt=media&token=655c2fbe-3c99-4bad-92a7-bc2e0d75d733');

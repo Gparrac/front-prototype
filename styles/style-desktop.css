@@ -60,8 +60,10 @@ footer .subtitle{
 }
 .info__image--desktop {
     display: block;
-    width: 814px;
-    height: 800PX;    
+    max-width: 814px;
+    max-height: 803PX;    
+    width: 51vw;
+    height:50vw;
     position: absolute;
     top:-20px;
     left: 10px;
